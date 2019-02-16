@@ -7,15 +7,16 @@
 	<link rel="shortcut icon" href="https://micro.blog/{{ .Site.Author.username }}/favicon.png" type="image/x-icon" />
 
   <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/stylesheets/font.css" />
   <link rel="stylesheet" href="/assets/stylesheets/global.css" />
-  <link rel="stylesheet" href="/custom.css" />
-
-    {{ if .RSSLink -}}
-      <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-      <link href="{{ "podcast.xml" | absURL }}" rel="alternate" type="application/rss+xml" title="Podcast" />
-      <link rel="alternate" type="application/json" title="{{ .Site.Title }}" href="{{ "feed.json" | absURL }}" />
-      <link rel="EditURI" type="application/rsd+xml" href="{{ "rsd.xml" | absURL }}" />
-    {{ end -}}
+  <link rel="stylesheet" href="/assets/stylesheets/custom.css" />
+ 
+  {{ if .RSSLink -}}
+    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    <link href="{{ "podcast.xml" | absURL }}" rel="alternate" type="application/rss+xml" title="Podcast" />
+    <link rel="alternate" type="application/json" title="{{ .Site.Title }}" href="{{ "feed.json" | absURL }}" />
+    <link rel="EditURI" type="application/rsd+xml" href="{{ "rsd.xml" | absURL }}" />
+  {{ end -}}
 
 	<link rel="me" href="https://micro.blog/{{ .Site.Author.username }}" />
 	{{ with .Site.Params.twitter_username }}
@@ -33,3 +34,5 @@
 	<link rel="webmention" href="https://micro.blog/webmention" />
 	<link rel="subscribe" href="https://micro.blog/users/follow" />
 </head>
+
+

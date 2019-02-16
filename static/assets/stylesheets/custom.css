@@ -1,0 +1,449 @@
+:root {
+    --01: #fafafa;
+    --02: #d1d1d1;
+    --03: #3b3b3b;
+    --04: #053ef4;
+    --05: #B0C4F9;
+    
+}
+
+html {
+    /* html is set to 62.5% so that all the REM measurements 
+    are based on 10px sizing. So basically 1.5rem = 15px :) */
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--text);
+    font-family: 'libertadregular', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif;
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.7em; /* currently ems because chrome bug misinterpreting rems on body element */
+    line-height: 2.5rem;
+}
+
+
+/* Grid
+––––––––––––––––––––––––––––––––––––––– */
+nav {
+    padding: 1rem;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.column,
+.columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+
+    .column,
+    .columns {
+        margin-left: 4%;
+    }
+
+    .column:first-child,
+    .columns:first-child {
+        margin-left: 0;
+    }
+
+    .one.column,
+    .one.columns {
+        width: 4.66666666667%;
+    }
+
+    .two.columns {
+        width: 13.3333333333%;
+    }
+
+    .three.columns {
+        width: 22%;
+    }
+
+    .four.columns {
+        width: 30.6666666667%;
+    }
+
+    .five.columns {
+        width: 39.3333333333%;
+    }
+
+    .six.columns {
+        width: 48%;
+    }
+
+    .seven.columns {
+        width: 56.6666666667%;
+    }
+
+    .eight.columns {
+        width: 65.3333333333%;
+    }
+
+    .nine.columns {
+        width: 74.0%;
+    }
+
+    .ten.columns {
+        width: 82.6666666667%;
+    }
+
+    .eleven.columns {
+        width: 91.3333333333%;
+    }
+
+    .twelve.columns {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .one-third.column {
+        width: 30.6666666667%;
+    }
+
+    .two-thirds.column {
+        width: 65.3333333333%;
+    }
+}
+
+
+/* Colours
+–––––––––––––––-–––––––––––––––––––– */
+.bg-aquamarine {
+    background-color: var(--04);
+}
+
+.bg-off-white {
+    background-color: var(--01);
+}
+
+
+.bg-grey {
+    background-color: var(--03);
+}
+
+.bg-light-grey {
+    background-color: var(--02;
+}
+
+.aquamarine {
+    color: var(--04);
+}
+
+.off-white {
+    color: var(--01);
+}
+
+
+.grey {
+    color: var(--03);
+}
+
+.light-grey {
+    color: var(--02);
+}
+
+
+/* Utilities
+––––––––––––––––––––––––––––––––––––– */
+.featured {
+    width: 100%;
+}
+
+/* Clearing
+––––––––––––––––––––––––––––––––––––– */
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Spacing
+––––––––––––––––––––––––––––––––––––– */
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+    margin-bottom: 2.5rem;
+}
+
+/* Typography 
+--------------------------------------*/
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    font-weight: 400;
+    font-family: 'libertadextrabold';
+}
+
+h1 {
+    font-size: 4.0rem;
+    line-height: 1.2;
+    letter-spacing: -.1rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 3.0rem;
+    line-height: 1.25;
+    letter-spacing: -.1rem;
+    margin: 3rem 0;
+}
+
+h3 {
+    font-size: 3.0rem;
+    line-height: 1.3;
+    letter-spacing: -.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+    h1 {
+        font-size: 5.0rem;
+    }
+
+    h2 {
+        font-size: 4.2rem;
+    }
+
+    h3 {
+        font-size: 3.6rem;
+    }
+}
+
+em {
+    font-family: 'libertaditalic';
+    font-weight: normal;
+    font-style: normal;
+}
+
+strong {
+    font-family: 'libertadextrabold';
+    font-style: normal;
+}
+
+
+/* Links 
+--------------------------------------*/
+a {
+    color: var(--link);
+    text-decoration: none;
+    border-bottom: 1px solid var(--link);
+    transition: none;
+    font-weight: normal;
+}
+
+a:hover {
+    color: var(--link-hover);
+    border-bottom: 1px solid var(--link-hover);
+}
+
+
+nav ul li a {
+    color: var(--01);
+}
+
+nav ul li a:hover {
+    color: var(--05);
+}
+
+
+
+hr {
+    border: none;
+    padding: 30px 0;
+    text-align: center;
+}
+
+hr:before {
+    content: "❦";
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+.date {
+    padding-top: 10px;
+    border-top: 5px solid var(--date);
+}
+
+p,
+li {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+}
+
+footer p,
+footer.copyright {
+    font-size: 1.6rem;
+}
+
+p img {
+    width: 100%;
+    height: auto
+}
+
+
+header a,
+header a:hover,
+nav a,
+nav a:hover,
+h1 a,
+h1 a:hover {
+    border-bottom: none;
+}
+
+header {
+    margin: 5rem auto;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer.footer {
+    margin-bottom: 5rem;
+    border-top: 1px dotted var(--date);
+    padding-top: 10px;
+}
+
+.copyright {
+    font-size: 1rem;
+}
+
+h1.Logo a {
+    font-weight: bold;
+}
+
+#microgram div.photo {
+    width: 90vw;
+    height: 90vw;
+    float: left;
+    margin: 0 0 25px 0;
+}
+
+#microgram {
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+}
+
+#microgram div.photo:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+/* Makes sure italics do not clash with adjacent letters. */
+blockquote p:before {
+    content: '\201C';
+    font-size: 1.3em;
+}
+
+/* Simple quotation marks before and after a blockquote. */
+blockquote p:after {
+    content: '\201D';
+    font-size: 1.3em;
+}
+
+
+/*Responsive design - effective only for large screens.*/
+@media all and (max-width: 1024px) and (min-width: 700px) {
+    #microgram div.photo {
+        width: 270px;
+        height: 270px;
+        float: left;
+        margin: 0 0 25px 25px;
+    }
+
+    #microgram {
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 90%;
+        overflow: hidden;
+    }
+}
+
+
+@media all and (min-width: 1024px) {
+
+    ol,
+    ul {
+        list-style-position: outside;
+    }
+
+
+    nav ul li {
+        text-align: left;
+        margin-right: 10px;
+        display: inline;
+    }
+
+
+
+    #microgram div.photo {
+        width: 300px;
+        height: 300px;
+        float: left;
+        margin: 0 0 25px 25px;
+    }
+
+    #microgram {
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 90%;
+        overflow: hidden;
+    }
+}
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

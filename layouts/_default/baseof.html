@@ -2,16 +2,16 @@
 <html>
   {{ partial "head.html" . }}
 
-  <body class="{{ if .IsHome }}home{{ else }}single{{ end }}">
-
-    {{ partial "header.html" . }}
-
-    <main class="main__content" role="main">
-      {{ block "main" . }}{{ end }}
-    </main>
-
-    {{ partial "footer.html" . }}
-    {{ partial "custom_footer.html" . }}
+  <body class="bg-aquamarine">
+       {{ partial "navigation.html" . }}
+    <div id="container" class="bg-off-white">
+        {{ partial "header.html" . }}
     
+        <main role="main">
+          {{ block "main" . }}{{ end }}
+        </main>
+    
+        {{ partial "footer.html" . }}
+    </div>
   </body>
 </html>

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'libertadextrabold';
+    src: url('/uploads/2019/5cbb49b38e.woff') format('woff'),
+         url('/uploads/2019/6aa9474b49.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'libertaditalic';
+    src: url('/uploads/2019/8ea56df2bf.woff') format('woff'),
+         url('/uploads/2019/17bb133a87.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'libertadregular';
+    src: url('/uploads/2019/b3f7306947.woff') format('woff'),
+         url('/uploads/2019/381c4bc976.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+		}
